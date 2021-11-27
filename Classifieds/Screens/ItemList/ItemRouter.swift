@@ -32,7 +32,6 @@ class ItemRouter: ItemRoutable {
     }
     
     func goToItemDetailsScreen(item: Item?, navigationController: UINavigationController?) {
-        print("goToItemDetailsScreen")
         guard let detailsViewController = ItemDetailsRouter.createDetailsModule(with: item) else { return }
         navigationController?.pushViewController(detailsViewController, animated: true)
     }

@@ -34,6 +34,7 @@ private extension ItemView {
         labelTitle?.text = item?.title
         labelSubtitle?.text = item?.subTitle
         labelDescription?.text = item?.description
-        imageViewThumbnail?.loadImage(from: item?.imageUrlString)
+        imageViewThumbnail?.loadImage(from: item?.imageUrlString, placeHolderImage: UIImage(systemName: "bag"))
+        imageViewThumbnail?.tintColor = .lightGray
     }
 }

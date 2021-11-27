@@ -160,6 +160,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8D7FE7E32752B5E1007220E7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D7FE7E42752B5F6007220E7 /* ItemView */,
+				8D7FE7D127523BCA007220E7 /* ItemListCell */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D7FE7E42752B5F6007220E7 /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				8D7FE7DA275246F2007220E7 /* ItemView.swift */,
+				8D7FE7DC27524701007220E7 /* ItemView.xib */,
+			);
+			path = ItemView;
+			sourceTree = "<group>";
+		};
 		8D9A09F727511DB3000A10DD = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +243,7 @@
 				8D9A0A3727512120000A10DD /* ItemInteractor.swift */,
 				8D9A0A3B27512155000A10DD /* ItemEntity.swift */,
 				8D9A0A3927512132000A10DD /* ItemRouter.swift */,
-				8D7FE7D127523BCA007220E7 /* ItemListCell */,
+				8D7FE7E32752B5E1007220E7 /* UI */,
 			);
 			path = ItemList;
 			sourceTree = "<group>";
@@ -236,8 +254,6 @@
 				8D9A0A4027514AAF000A10DD /* ItemDetailsViewController.swift */,
 				8D9A0A4227514AD8000A10DD /* ItemDetailsPresenter.swift */,
 				8D9A0A4D275155B7000A10DD /* ItemDetailsRouter.swift */,
-				8D7FE7DA275246F2007220E7 /* ItemView.swift */,
-				8D7FE7DC27524701007220E7 /* ItemView.xib */,
 			);
 			path = ItemDetails;
 			sourceTree = "<group>";

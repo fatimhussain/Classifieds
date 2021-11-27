@@ -29,12 +29,8 @@ extension ItemDetailsViewController: ItemDetailsDisplayable {
     
     func displayDetails(for item: Item) {
         viewItem?.item = item
-        //display Details on UI
-        print("item.name::\(item.name)")
-        print("item.imageIds::\(item.imageIds)")
-        print("item.ImageUrls::\(item.imageUrls)")
-        print("item.ImageUrlsThhumbnails::\(item.imageUrlsThumbnails)")
-        imageView?.loadImage(from: item.imageUrls.first)
+        imageView?.loadImage(from: item.imageUrls.first, placeHolderImage: UIImage(systemName: "bag"))
+        imageView?.tintColor = .lightGray
     }
     
     func displayError(messae: String) {

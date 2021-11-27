@@ -46,6 +46,7 @@ private extension ItemViewController {
         tableView?.register(UINib(nibName: cellIdentifier, bundle: Bundle.main), forCellReuseIdentifier: cellIdentifier)
         tableView?.estimatedRowHeight = 60
         tableView?.rowHeight = UITableView.automaticDimension
+        tableView?.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     func updateView() {
@@ -54,10 +55,14 @@ private extension ItemViewController {
     }
     
     func showLoading() {
+        view.isUserInteractionEnabled = false
+        activityIndicator?.isHidden = false
         activityIndicator?.startAnimating()
     }
     
     func hideLoading() {
+        view.isUserInteractionEnabled = true
+        activityIndicator?.isHidden = true
         activityIndicator?.stopAnimating()
     }
 }
