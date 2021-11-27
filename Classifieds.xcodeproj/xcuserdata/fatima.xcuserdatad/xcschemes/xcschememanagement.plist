@@ -9,6 +9,31 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>ClassifiedsUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8D9A09FF27511DB3000A10DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D9A0A1527511DB7000A10DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D9A0A2027511DB7000A10DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

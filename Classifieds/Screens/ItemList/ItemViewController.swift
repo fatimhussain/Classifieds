@@ -43,10 +43,12 @@ class ItemViewController: UIViewController {
 private extension ItemViewController {
     func configureView() {
         title = "List"
+        
         tableView?.register(UINib(nibName: cellIdentifier, bundle: Bundle.main), forCellReuseIdentifier: cellIdentifier)
         tableView?.estimatedRowHeight = 60
         tableView?.rowHeight = UITableView.automaticDimension
         tableView?.tableFooterView = UIView(frame: CGRect.zero)
+        tableView?.accessibilityIdentifier = "itemListTableView"
     }
     
     func updateView() {
