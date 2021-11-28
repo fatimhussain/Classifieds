@@ -8,12 +8,12 @@
 import Foundation
 
 protocol ItemInteractable {
-    var presenter: ItemPresenter? { get set }
+    var presenter: ItemPresentable? { get set }
     func getItems()
 }
 
 class ItemInteractor: ItemInteractable {
-   weak var presenter: ItemPresenter?
+   weak var presenter: ItemPresentable?
     
     func getItems() {
         APIManager.shared.loadItems { [weak self] (itemResponse, error) in

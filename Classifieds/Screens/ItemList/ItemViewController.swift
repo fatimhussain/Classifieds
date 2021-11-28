@@ -15,7 +15,7 @@ protocol ItemViewDisplayable: AnyObject {
 
 class ItemViewController: UIViewController {
     
-    private var items = [Item]() {
+    var items = [Item]() {
         didSet {
             tableView?.reloadData()
             updateView()

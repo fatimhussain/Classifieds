@@ -13,7 +13,7 @@ protocol ItemDetailsDisplayable: AnyObject {
 }
 
 class ItemDetailsViewController: UIViewController {
-    var presenter: ItemDetailsPresenter?
+    var presenter: ItemDetailsPresentable?
     
     @IBOutlet weak var viewItem: ItemView?
     @IBOutlet weak var imageView: UIImageView?

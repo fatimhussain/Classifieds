@@ -8,6 +8,7 @@
 import Foundation
 
 protocol ItemDetailsPresentable {
+    var view: ItemDetailsDisplayable? { get set }
     var item: Item? { get set }
     func getItemDetails()
 }
